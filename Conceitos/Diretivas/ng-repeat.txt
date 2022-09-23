@@ -1,0 +1,4 @@
+Usada quando necessitamos percorrer(interar) com objetos que representão coleções 
+de Arrays = matriz/vetores...  
+
+ex:  <tr ng-repeat="carro in carros">

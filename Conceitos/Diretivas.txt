@@ -1,0 +1,18 @@
+As diretivas podem ser consideradas uma forma de estender as funcionalidades da linguagem HTML, 
+utilizando para isso chamadas as funções JavaScript de modo declarativo. 
+
+PS: O framework propriamente dito é importado/inserido no documento HTML por meio da 
+tag <script> presente na seção de cabeçalho.
+EX: <script src="angular.min.js"></script>
+
+-----------------------------------------------
+Primeira diretiva inclusa em um projeto HTML do angulaJs é a:
+ng-app na tag <html>:
+EX: <html ng-app>
+
+OBS: Ela faz parte do conjunto de "instruções" do AngularJs, conhecidas como diretivas 
+é utilizada para definir a raiz da aplicação.
+----------------------------------------------
+
+{{ }} <- DataBinding
+ 

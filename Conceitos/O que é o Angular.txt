@@ -1,0 +1,36 @@
+Angular é uma Plataforma de aplicação WEB, que agiliza o desenvolvimento de aplicações WEB com um modelo de SPA Simple-Page Application (Aplicação de Página Única), (Framework) desenvolvida pelo Google na liguagem TipeScript que utiliza o padrão de projetos MVC.
+
+-----------------------------------------------------------------------------
+Frameworks - Uma sofisticada estrutura que abriga códigos de programação para oferecer ao programador inúmeros recursos, capazes de agilizar o desenvolvimento e o uso dos aplicativos. É uma evolução das antigas bibliotecas de funções e componentes disponíveis para uso em diversas linguagens de programação como: c c++ Visual Basic ou Delphi. COMPREENDE FUNÇÕES, OBJETOS E MÉTODOS que tornam possível executar determinadas operações de forma automatizadas. 
+----------------------------------------------------------------------------
+
+MVC - Padrão de projeto de Software (Model-View-Controller) tem como objetivo nortear o p´rocesso de separação do código de aplicação de acordo com a funcionalidade ou objetivo, levando um agrupamento em categorias, conhecida na Engenharia de Software como Camadas.
+
+OBJETIVO DO MVC - Isolar partes do código de modo que elas sejam as mais independentes possível, porém com um alto grau de conectividade. O Objeto pode existir sem a necessidade do outro! Podendo serem vinculados de maneira simplificada por meio de uma interface bem definifda.
+
+VANTAGEM DO MVC - A sua separação de camadas oferece um ganho em relação à facilidade e redução de tempo nos processos de manutenção do sistema. Auxiliado a execução de testes unitários 
+
+SUAS CAMADAS:
+
+MODEL (CLASSE COM ESTRUTURAS DE DADOS): Na camada Model (modelo) temos os códigos responsáveis pela modelagem ou representação da estrutura lógica dos dados que o sistema deverá manipular. É importante não confundir com o processo de modelagem de dados empregado na área de banco de dados.
+
+VIEW: (Visão) compreende a parte do sistema que representa a interface com o usuário e engloba na maioria das vezes a exibição dos dados armazenados em memória ou em um banco de dados no disco (via Modelo de camada Model).
+
+CONTROLLER: (ROTINAS QUE LIGAM MODEL E VIEW):  Funciona como uma ponte entre a camada MODEL e VIEW. Nela os códigos agem de acordo com os eventos ocorridos na camada View ou na Model (esta camada consiste em rotinas Métodos e Funções) que leem dados da VIEWe atualizam as estruturas correspondentes na camada Model e exibidos na camada view.
+
+OBS: VIEW e MODEL nunca interagem entre si.
+----------------------------------------------------------------------------
+
+SPA APLICAÇÕES DE PÁGINA ÚNICA:
+Conceito denominado Single-Page Application (TIPO DE APLICAÇÃO WEB)
+
+este tipo de aplicação WEB se caracteriza por apresentar uma tela que corresponde à PÁGINA PRINCIPAL, com as DEMAIS PÁGINAS SENDO CARREGADAS DENTRO DELA, em áreas específicas, ao invés de serem carregadas por INTERO de maneira a SOBREPOR a PÁGINA PRINCIPAL. isso imita o comportamento de APLICAÇÃO SERVIDOR de aplicações DESKTOP ou CLIENTE SERVIDOR. 
+
+VANTAGENS: não sobrecarrega o servidor igual a construção tradicional de páginas empregadas por web sites regulares. geralmente construidos com tecnologias SERVE-SIDE como JAVA, PHP ou ASP.NET sobrecarregando o servidor se existirem muitas conexções.
+
+OBS: com o método SPA toda a parte de processamento relacionada coma construção da página em si fica a cargo do navegador do usuário, o servidor WEB tem apenas função de fornecer os dados requisitados, NÃO SENDO, PORTANTO, SOBRECARREGADO, mesmo com uma grande quantidade de requisições a serem atendidas.
+------------------------------------------------------------------------------
+
+
+ 
+

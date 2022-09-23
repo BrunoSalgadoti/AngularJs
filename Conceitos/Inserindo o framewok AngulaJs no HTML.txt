@@ -1,0 +1,7 @@
+O framework propriamente dito é importado/inserido no documento HTML por meio da 
+tag <script> presente na seção cabeçalho:
+EX:  <head>
+        <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+        <title>AngularJS - Exemplo 1</title>
+        <script src="angular.min.js"></script>  <-------- Chamando o AngularJs
+    </head>
