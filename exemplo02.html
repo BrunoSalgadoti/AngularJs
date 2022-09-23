@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="aluguelCarro">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+  <script src="./Js/angular.min.js"></script>
+
+  <title>Aluguel de Carro</title>
+  <script>
+    var alugaCarro = angular.module("aluguelCarro", []);
+    alugaCarro.controller("alugarCarroController", function ($scope) {
+      $scope.carros = [
+        {
+          marca: "Chevrolet", modelo: "Onix", cor: "Preta",
+          anoModelo: "2018", combustivel: "Flex"
+        },
+        {
+          marca: "Chevrolet", modelo: "Blazer", cor: "Prata",
+          anoModelo: "2016", combustivel: "Diesel"
+        },
+        {
+          marca: "Ford", modelo: "Fiesta Hatch", cor: "Branca",
+          anoModelo: "2016", combustivel: "Flex"
+        },
+        {
+          marca: "Fiat", modelo: "Argo", cor: "Cinza",
+          anoModelo: "2018", combustivel: "Flex"
+        },
+        {
+          marca: "Honda", modelo: "City", cor: "Preta",
+          anoModelo: "2017", combustivel: "Flex"
+        },
+        {
+          marca: "Toyota", modelo: "Corolla", cor: "Cinza",
+          anoModelo: "2016", combustivel: "Flex"
+        },
+        {
+          marca: "Toyota", modelo: "Picape Hilux", cor: "Prata",
+          anoModelo: "2018", combustivel: "Diesel"
+        }
+      ];
+      $scope.adicionarCarro = function (carro) {
+        $scope.carros.push(carro);
+        delete $scope.carro;
+      };
+
+    });
+  </script>
+</head>
+
+<body ng-controller="alugarCarroController">
+  <H3>Aluguel de Carros</H3>
+
+  <table>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Cor</th>
+      <th>Ano Modelo</th>
+      <th>Combustível</th>
+    </tr>
+    <tr ng-repeat="carro in carros">
+      <th>{{carro.marca}}</th>
+      <th>{{carro.modelo}}</th>
+      <th>{{carro.cor}}</th>
+      <th>{{carro.anoModelo}}</th>
+      <th>{{carro.combustivel}}</th>
+    </tr>
+  </table>
+  <hr>
+
+  <p><label>Marca: </label>
+    <input type="text" ng-model="carro.marca">
+  </p>
+  <p><label>Modelo: </label>
+    <input type="text" ng-model="carro.modelo">
+  </p>
+  <p><label>Cor: </label>
+    <input type="text" ng-model="carro.cor">
+  </p>
+  <p><label>Ano Modelo: </label>
+    <input type="text" ng-model="carro.anoModelo">
+  </p>
+  <p><label>Combustível: </label>
+    <input type="text" ng-model="carro.combustivel">
+  </p>
+  <br>
+  <button ng-click="adicionarCarro(carro)">Adicionar</button>
+
+</body>
+
+</html>
