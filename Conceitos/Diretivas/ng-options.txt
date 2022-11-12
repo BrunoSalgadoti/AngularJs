@@ -1,7 +1,0 @@
-Usadas para criar campos que possuem valores predefinidos, que são apresentadas aos usuários de forma de uma LISTA DE SELEÇÃO, popularmente conhecida como CAIXA DE COMBINAÇÃO.
-
-PS: para que seja possível utiliza-la, é necessário criar previamente uma matriz de dados que contém os ítens a serem exibidos pela caixa de combinação criada com a tag <select> 
-EX tag <select> -> <select ng-model="carro.tipo" ng-options="tipo for tipo in tipos">
-
-Criar novas matrizes para referencia-las em <head> detro da tag <script> $scope.tipos ["Ford", "Audi" ...]
-OBS: Tendo definido essas matrizes podemos criar as respectivas caixas de combinação (tag) <select> por meio da diretiva ng-options.
