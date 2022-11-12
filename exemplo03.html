@@ -3,12 +3,14 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+  <title>Aluguel de Carro - Versão 3</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <script src="./Js/angular.min.js"></script>
-  <title>Aluguel de Carro - Versão 2</title>
 
   <script>
     var alugaCarro = angular.module("aluguelCarro", []);
     alugaCarro.controller("alugarCarroController", function ($scope) {
+      $scope.nomeAplicacao = "Aluguel de Carros - Versão 3";
       $scope.carros = [
         {
           marca: "Chevrolet", modelo: "Onix", tipo: "Hatch", cor: "Preta",
@@ -51,12 +53,78 @@
 
     });
   </script>
+
+  <style>
+    .table {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      text-align: center;
+    }
+
+    .form-control {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 5%;
+      padding-right: 5%;
+      background-color: beige;
+    }
+
+    .tituloAplicacao {
+      background-color: #fcdd7a;
+      border-radius: 5px;
+      text-align: center;
+      width: 700px;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .legendaCarro {
+      background-color: #fff9a4;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      margin-left: 12%;
+      align-items: center;
+      width: 15%;
+    }
+
+    .selectField {
+      margin-right: 10px;
+      width: 15%;
+      height: 33px;
+    }
+
+    .selectInout {
+      margin-right: 10px;
+      width: 15%;
+    }
+
+    .btn {
+      margin-left: 45%;
+      margin-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-weight: 600;
+    }
+  </style>
+
 </head>
 
 <body ng-controller="alugarCarroController">
-  <H3>Aluguel de Carros - Versão 2</H3>
+  <div class="tituloAplicacao">
+    <h3 ng-bind="nomeAplicacao"></h3>
+  </div>
 
-  <table>
+  <table class="table">
     <tr>
       <th>Marca</th>
       <th>Modelo</th>
@@ -75,38 +143,43 @@
     </tr>
   </table>
   <hr>
+  <div class="form-control">
+    <legend class="legendaCarro">Adicione o carro desejado</legend>
+    <p>
+      <label class="label">Selecione a marca: </label>
+      <select class="selectField" ng-model="carro.marca" ng-options="marca for marca in marcas">
+        <option value="">Selecione a marca </option>
+      </select>
+      <label class="label">Selecione o modelo:</label>
+      <input class="selectInout" type="text" ng-model="carro.modelo">
+    </p>
 
-  <p>
-    <label>Selecione a marca: </label>
-    <select ng-model="carro.marca" ng-options="marca for marca in marcas">
-    </select>
-  </p>
-  <p>
-    <label>Modelo: </label>
-    <input type="text" ng-model="carro.modelo">
-  </p>
-  <p>
-    <label>Selecione o tipo: </label>
-    <select ng-model="carro.tipo" ng-options="tipo for tipo in tipos">
-    </select>
-  </p>
-  <p>
-    <label>Selecione a cor: </label>
-    <select ng-model="carro.cor" ng-options="cor for cor in cores">
-    </select>
-  </p>
- <p>
-    <label>Ano Modelo: </label>
-    <input type="text" ng-model="carro.anoModelo">
-  </p>
-  <p>
-    <label>Selecione o combustível: </label>
-    <select ng-model="carro.combustivel" ng-options="combustivel for combustivel in combustiveis">
-    </select>
-  </p>
+    <p>
+      <label class="label">Selecione o tipo: </label>
+      <select class="selectField" ng-model="carro.tipo" ng-options="tipo for tipo in tipos">
+        <option value="">Selecione o tipo </option>
 
-  <br>
-  <button ng-click="adicionarCarro(carro)">Adicionar</button>
+      </select>
+
+      <label class="label">Selecione a cor: </label>
+      <select class="selectField" ng-model="carro.cor" ng-options="cor for cor in cores">
+        <option value="">Selecione a cor </option>
+      </select>
+    </p>
+    <p>
+      <label class="label">Selecione Ano/Modelo: </label>
+      <input class="selectInout" type="text" ng-model="carro.anoModelo">
+
+      <label class="label">Selecione o combustível: </label>
+      <select class="selectField" ng-model="carro.combustivel" ng-options="combustivel for combustivel in combustiveis">
+        <option value="">Selecione o combustível </option>
+      </select>
+    </p>
+
+    <br>
+
+    <button class="btn btn-primary" ng-click="adicionarCarro(carro)">Adicionar</button>
+  </div>
 </body>
 
 </html>

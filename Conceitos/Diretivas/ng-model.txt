@@ -2,5 +2,5 @@
 EX: <input ng-model="nome_completo" type="text"><br>
 
 E para vincular os dados da diretiva a um campo usamos a expressão AngulaJS {{}} "DataBiding"
-dentro deste par de simbolos se encontra o nome do objetoque representa a caixa de entrada:
+dentro deste par de simbolos se encontra o nome do objeto que representa a caixa de entrada:
 EX: {{nome_completo}}

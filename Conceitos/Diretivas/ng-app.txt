@@ -1,6 +1,4 @@
-Ela faz parte do conjunto de "instruções" do AngulaJs, conhecidas como diretivas, 
-e é utilizada para definir a RAIZ DA APLICAÇÃO , normalmente é inserida na tag <HTML ng-app> 
-indicando que todo o conteúdo está no controle do framework AngulaJs.
+Ela faz parte do conjunto de "instruções" do AngulaJs, conhecidas como diretivas, e é utilizada para definir a 
+RAIZ DA APLICAÇÃO , normalmente é inserida na tag <HTML ng-app> indicando que todo o conteúdo está no controle do framework AngulaJs.
 
-PS: essa diretiva define o ponto central de uma aplicação AngularJs 
-a correspondente "instrução em código" será representada em seguida entre parênteses.
+PS: essa diretiva define o ponto central de uma aplicação AngularJs a correspondente "instrução em código" será representada em seguida entre parênteses.

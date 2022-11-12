@@ -1,0 +1,1 @@
+ngBind -> Ela permite associar a uma determinada expressão, da mesma forma que ocorre com o operador de interpolação de expressão {{}} . Esse último método é mais versátil, uma vez que permite a inserção de operações matemáticas dentro da expressão. Um exemplo seria a concatenação de duas ou mais Strings, ou adição de valores numéricos.
